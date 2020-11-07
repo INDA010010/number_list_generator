@@ -9,4 +9,4 @@ while num <= result:
         num += 1
     if num == result:
         print(str(num), "]")
-
+        break
