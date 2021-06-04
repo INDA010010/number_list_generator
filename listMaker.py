@@ -1,13 +1,15 @@
 num = int(input("Enter start number: "))
 num2 = num
-result = int(input("Enter end number: "))
-while num <= result:
+end = int(input("Enter end number: "))
+output = ""
+while num <= end:
     if num == num2:
-        print("[", str(num), ", ")
+        output += "["+str(num)+", "
         num += 1
-    if num != num2 and num <= result:
-        print(str(num),", ")
+    if num != num2 and num != end:
+        output += str(num)+", "
         num += 1
-    if num == result:
-        print(str(num), "]")
+    if num == end:
+        output += str(num)+"]"
         break
+print(output)
