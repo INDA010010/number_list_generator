@@ -1,4 +1,5 @@
 num = int(input("Enter start number: "))
+num2 = num
 result = int(input("Enter end number: "))
 while num <= result:
     if num == num2:
